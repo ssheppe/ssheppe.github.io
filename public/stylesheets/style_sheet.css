@@ -1,0 +1,112 @@
+html {
+	background-color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: medium;
+}
+
+a.about_link{
+    color: #F46036;
+    text-decoration: underline;
+}
+
+a.about_link:hover{
+    color: black;
+}
+/* navigation */
+ul.nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li.nav {
+    float: right;
+}
+
+.active {
+    background-color: #9178C4;
+} 
+
+
+.navbar-header{
+    text-decoration: underline;
+}
+.navbar-brand {
+    font-family: 'Raleway', sans-serif;
+    float: left;
+    height: 50px;
+    padding: 30px 30px;
+    font-size: 30px;
+    line-height: 20px;
+    color: black;
+    position: fixed;
+}
+
+.navbar-brand:hover {
+    float: left;
+    height: 50px;
+    padding: 30px 30px;
+    font-size: 30px;
+    line-height: 20px;
+    color: #9178C4;
+    position: fixed;
+}
+.nav li a{
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    display: block;
+    padding: 30px 30px;
+    color:black;
+}
+
+.nav li a:hover{
+    color: #9178C4;
+}
+
+/*about me*/
+.about {
+    padding: 0px 10px 10px 20px;
+   /* border: 2px solid #73AD21;*/
+    float:right;
+}
+
+.about_image{
+    clear: both;
+    margin: 0 auto;
+    height: 600px;
+    width: 600px;
+
+}
+
+.green{
+    color: #3BA99C
+}
+
+.orange{
+    color: #F46036;
+}
+
+.about_story{
+    clear: both;
+    bottom: 0;
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.the_office{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+
+}
+
+.index_image{
+    width:800
+    position: relative;
+    margin: 0 auto;
+}
+
+
