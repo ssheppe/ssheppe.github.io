@@ -95,6 +95,14 @@ li.nav {
     margin: 0 auto;
 }
 
+.more_info{
+    clear: both;
+    bottom: 0;
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+}
+
 .the_office{
     position: relative;
     width: 800px;
