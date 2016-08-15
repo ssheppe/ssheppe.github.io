@@ -4,6 +4,11 @@ html {
 	font-size: medium;
 }
 
+figcaption {
+    font-size: .9em;
+}
+
+
 a.about_link{
     color: #F46036;
     text-decoration: underline;
@@ -117,4 +122,6 @@ li.nav {
     margin: 0 auto;
 }
 
-
+.blog_image{
+    padding-top: 10px;
+}
