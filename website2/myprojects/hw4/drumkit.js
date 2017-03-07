@@ -3,7 +3,6 @@
 
 
 var keys = document.querySelectorAll('div[data-key]')
-var audio = document.querySelectorAll('audio[data-key]')
 // console.log(keys);
 // console.log(typeof(keys[4].attributes[0].nodeValue))
 // console.log(keys.length)
@@ -28,17 +27,19 @@ document.onkeydown = function(e) {
 
 
 function playSound(e) {
-  for(var i = 0; i < keys.length ; i++){
-    if(e.keyCode == keys[i].attributes[0].nodeValue){
-      keys[i].classList.toggle("playing")
-      audio[i].play()
-    }
+  // check if valid key
+  // reset audio like in rick roll
+
+  var aud = document.querySelector('audio[data-key="' + e.keyCode + '"]');
+  aud.pause();
+  aud.currentTime = 0;
+  if(aud != undefined){
+       aud.play();
+    var key = document.querySelector('.key[data-key="' + e.keyCode +'"]');
+   key.classList.add("playing");
   }
 }
 
-function stopSound(e){
-
-}
 
 /* 
   The level at which an event is registered is important.
@@ -50,9 +51,14 @@ function stopSound(e){
 */
 window.addEventListener('keydown', playSound);
 
-
 /*
   TODO: Finish the script so that the glow gets removed after you are 
   done pressing any valid key. 
   Everything else should work the same way as before.
 */
+
+keys.forEach(function(key) {
+  key.addEventListener('transitionend', function(e) {
+    key.classList.remove('playing');
+  });
+});

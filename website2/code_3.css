@@ -1,6 +1,4 @@
-html {
-	
-}
+/*favicon purple color 145 122 194*/
 
 body {
 	margin: 0 0;
@@ -10,11 +8,13 @@ body {
 a, a:visited {
 	color: rgba(0,0,0,0.7);
 	text-decoration: none;
+
 }
 
 a:hover {
 	font-weight: bold;
 	text-decoration: underline;
+
 }
 
 #main-frame {
@@ -42,7 +42,12 @@ a:hover {
 	padding-left: 20px;
 	padding-right: 25px;
 	padding-bottom: 25px;
-	border-bottom: 1px solid rgba(0,0,0,0.3);
+	border-bottom: 1px solid rgba(0,0,0,0.3);	
+}
+
+.docked-nav-items >li > a:hover{
+	color: #F46036;
+	text-decoration: none;
 }
 
 .brand > img {
@@ -63,6 +68,7 @@ a:hover {
 
 .brand > h2 {
 	margin-bottom: 0;
+	color: rgb(145, 122, 194);
 }
 
 .article {
@@ -83,13 +89,7 @@ a:hover {
 	left: 10px;
 }
 
-/*Edit the CSS of some elements down here*/
 
-/*TODO: Add transitions to docked-nav and article*/
-
-/*TODO: initially hide the docked-nav using transform: translateX*/
-
-/*TODO: Define the properties of docked-nav and article when active*/
 .docked-nav {
 	transition: transform 0.7s ease;
 	transform: translateX(-300px);
@@ -117,11 +117,12 @@ a:hover {
 }
 a.about_link{
     color: #F46036;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 a.about_link:hover{
     color: black;
+    text-decoration: none;
 }
 
 .about {
@@ -169,6 +170,30 @@ ul.contact{
 ul.contact > li {
 	padding: 10px;	
 }
+
+.home-facts > div{
+	font-size: 27px;
+	font-weight: 400;
+	line-height: 1.1;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.home-facts > div > a{
+	color: #F46036;
+}
+
+.home-facts > div > a:hover{
+	color: black;
+    text-decoration: none;
+}
+
+#school {
+	margin-top: -25px;
+}
+
+
+
 
 
 

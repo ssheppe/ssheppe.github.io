@@ -69,27 +69,35 @@ function runTimer() {
 
 
 startBtn.addEventListener("click", function(e) {
+	if(running) return;
 	running = true;
 	timerInterval = setInterval(function(){
-		if(running){
-			runTimer();
-		}
+		runTimer();
 	}, 1000);
 });
 
 pauseBtn.addEventListener("click", function(e){
-	if(running == true){
-		clearInterval(timerInterval);
-		running = false;
+	if(running){
+		clearingInterval();
 	}
 });
 
 resetBtn.addEventListener("click", function(e){
 	secDuration = 10;
-	console.log('reset clicked');
 	render(timerDiv, secDuration);
-	running = false;
+	clearingInterval();
 })
+
+function clearingInterval(){
+	clearInterval(timerInterval);
+	running = false;
+}
+	
+	
+	
+
+
+
 
 /*
 	TODO: Uncomment the line below when you have implemented render
