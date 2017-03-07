@@ -1,8 +1,15 @@
 /*favicon purple color 145 122 194*/
 
-body {
+
+
+html, body {
 	margin: 0 0;
 	font-family: 'Raleway', sans-serif;
+	background: url("carousel-images/scotland_fade.jpg");
+    width: 100%;
+    height: 100%;
+	background-repeat: repeat-x; 
+
 }
 
 a, a:visited {
@@ -190,6 +197,12 @@ ul.contact > li {
 
 #school {
 	margin-top: -25px;
+}
+
+h1.home {
+	font-size: 63px;
+    text-align: center;
+    margin-top: 15%;
 }
 
 
