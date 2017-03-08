@@ -2,7 +2,7 @@
 
 
 
-html, body {
+body.home {
 	margin: 0 0;
 	font-family: 'Raleway', sans-serif;
 	background: url("carousel-images/scotland_fade.jpg");
