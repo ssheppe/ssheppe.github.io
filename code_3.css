@@ -155,11 +155,16 @@ a.about_link:hover{
 }
 
 .more_info{
+/*	margin-top:50%;*/
     clear: both;
     bottom: 0;
     height: 600px;
     width: 600px;
     margin: 0 auto;
+}
+
+.more_info > p {
+	margin-top: 38%;
 }
 
 ul.contact{
@@ -203,6 +208,11 @@ h1.home {
 	font-size: 63px;
     text-align: center;
     margin-top: 15%;
+}
+
+.my-projects > div > h3 > a:hover{
+	color: #F46036;
+	text-decoration: none;
 }
 
 
